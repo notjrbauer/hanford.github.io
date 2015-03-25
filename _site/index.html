@@ -7,16 +7,13 @@
   <meta name="description" content="Jack Hanford's personal website">
   <meta name="keywords" content="Jack, Hanford, Michigan, Leland, Palo Alto, Teen, College, Front End, Web Developer, Jack Hanford, Hacker, Programmer, Web, JavaScript, Front">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/bttn.css">
   <link rel="stylesheet" type="text/css" href="bower_components/Font-Awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
   <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./css/bttn.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
 
-  <!-- <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'> -->
-  <link rel="stylesheet" type="text/css" href="vendor/jquery-tipr/tipr/tipr.css">
   <link rel="icon" type="image/png" href="images/me.jpg">
 
   <script src="bower_components/angular/angular.js"></script>
@@ -24,34 +21,36 @@
   <script src="bower_components/angular-aria/angular-aria.js"></script>
   <script src="bower_components/angular-material/angular-material.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/router/dist/router.es5.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/controller.js"></script>
-  <script src="assets/js/directives/commitList.js"></script>
-  <script src="assets/js/slide.js"></script>
+  <script src="app.js"></script>
+  <script src="./components/about/about.js"></script>
+  <script src="./components/commits/commitList.js"></script>
 </head>
 
-<body ng-app="website" ng-controller="MainCtrl">
+<body ng-app="website" ng-controller="AppController as app">
   <div class="trans">
-    <div class="picture-title" ng-click="home()">
-      <img id="top" src="images/me.jpg" class="ProfilePic">
+    <div class="picture-title">
+      <a ng-link="about">
+        <img id="top" src="images/me.jpg" class="ProfilePic">
+      </a>
       <h2 class="title">Jack <b>Hanford</b></h2>
       <p class="center">Developer - Hacker - Technology Addict</p>
     </div>
 
     <div class="buttonspace bttn-deck">
-      <a ng-click="portfolio()" class="fa fa-briefcase"><md-tooltip>What I've worked on</md-tooltip></a>
+      <a ng-link="portfolio" class="fa fa-briefcase"><md-tooltip>What I've worked on</md-tooltip></a>
       <a href="http://twitter.com/jackhanford" class="fa fa-twitter"><md-tooltip>Twitter</md-tooltip></a>
       <a href="http://github.com/hanford" class="fa fa-github-alt social"><md-tooltip>GitHubt</md-tooltip></a>
       <a href="http://facebook.com/jackhanford" class="fa fa-facebook"><md-tooltip>facebook</md-tooltip></a>
       <a href="mailto:jackhanford@gmail.com" class="fa fa-envelope"><md-tooltip>Email</md-tooltip></a>
-      <a ng-click="sideProjects()" class="fa fa-flask"><md-tooltip>Playground</md-tooltip></a>
+      <a ng-link="projects" class="fa fa-flask"><md-tooltip>Playground</md-tooltip></a>
     </div>
   </div>
 
   <div class="about">
 
-    <div ui-view></div>
+  <ng-viewport></ng-viewport>
 
     <!--      <div class="divider-div"></div>
       <h3>What I'm writing about</h3>
