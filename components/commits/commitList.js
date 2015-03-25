@@ -2,7 +2,7 @@ angular.module('website')
 
 .directive('commitList', ['$http', function($http) {
   return {
-    templateUrl: './assets/js/templates/commit-list.html',
+    templateUrl: './components/commits/commit-list.html',
     restrict: 'E',
     link: function (scope, attr, element) {
       $http.get('https://api.github.com/users/hanford/events').success(function(response) {
