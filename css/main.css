@@ -12,6 +12,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
+
+.about {
+	background-color: #F1F1F1;
+	color: rgba(0, 0, 0, 0.7);
+	overflow-x: none;
+	background-image: url(../../images/noise-2.png);
+	-webkit-font-smoothing: antialiased;
+}
+
 /*.picture-title {
 	visibilityr: hidden;
 }
@@ -190,14 +199,11 @@ footer {
 	display: inherit;
 }
 
-
-
-
-
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
 }
+
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 	transform: rotateY(180deg);
@@ -238,8 +244,6 @@ footer {
 	transform: rotateY(180deg);
 }
 
-
-
 .polaroid-images .front a {
 	text-align: center;
 }
@@ -247,7 +251,6 @@ footer {
 .polaroid-images .back a {
 	text-align: center;
 }
-
 
 .polaroid-images a {
 	background: white;
@@ -264,37 +267,44 @@ footer {
 	z-index: 0;
 	position: relative;
 }
+
 .polaroid-images a:after {
 	color: #333;
 	font-size: 20px;
 	position: relative;
 	top: 15px;
 }
+
 .polaroid-images img {
 	display: block;
 	border: 1px dotted #BBBAC3;
 	width: 250px;
 	height: 200px;
 }
+
 .polaroid-images .polaroid-title {
 	font-size: 20px;
 	text-align: center;
 	position: relative;
 	top: 10px;
 }
+
 .polaroid-images a .project-desc {
 	position: relative;
 	top: 10px;
 	text-align: center;
 }
+
 .polaroid-images .back a span.back-title {
 	text-align: center !important;
 	font-weight: 600;
 	font-size: 18px;
 }
+
 .resume {
 	display: none;
 }
+
 .no-underline {
 	text-decoration: none;
 }
@@ -308,38 +318,49 @@ footer {
 	padding: 5px 15px;
 	transition: all .2s;
 }
+
 .blogtitle:hover {
 	background-color: #EEEEF3;
 }
+
 .topic {
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .topic > p {
 	text-align: left;
 }
+
 .topic > p > a {
 	text-align: center;
 }
+
 .px600 {
 	width: 600px;
 }
+
 .follow-me {
 	padding-left: 85px;
 }
+
 @media (max-width: 400px) {
 	.follow-me {
 		padding-left: 0;
 	}
 }
+
 .take-me-back {
 	position: fixed;
 	top: 0;
 	left: 0;
 	padding: 20px;
 }
-.talk-box {} .talk-box .tab {
+
+.talk-box {} 
+
+.talk-box .tab {
 	display: inline-block;
 	font-weight: 900;
 	font-size: 1.1em;
@@ -364,26 +385,32 @@ strong {
 	.mobile-hide {
 		display: none !important;
 	}
+
 	.datboxshadowdoe {
 		display: none;
 	}
+
 	.container {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
 	.polaroid-images a {
 		clear: both;
 		display: block;
 	}
+
 	.polaroid-images img {
 		max-width: 100%;
 	}
+
 }
 .take-me-back:hover {
 	transition-timing-function: linear;
 	transition: .1s all;
 	-webkit-transform: scale(1.1);
 }
+
 .social-box {
 	display: inline-block;
 	margin: 0 auto;
