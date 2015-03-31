@@ -1,6 +1,13 @@
 var gulp = require('gulp');
-var gulpsmith = require('gulpsmith');
+var sass = require('gulp-sass');
+var csso = require('gulp-csso');
 var $ = require('gulp-load-plugins');
 
+gulp.task('sass', function() {
+  gulp.src('./scss/*.scss')
+    .pipe(sass())
+    .pipe(csso())
+    .pipe(gulp.dest('./assets/css/'))
+});
 
-gulp.task('default', ['js'])
+gulp.task('default', ['sass'])
