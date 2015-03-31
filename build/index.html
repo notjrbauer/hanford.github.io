@@ -1,0 +1,117 @@
+<!-- Hows my code? ... Send me an email jackhanford@gmail.com-->
+<html>
+
+<head>
+  <title>Jack Hanford</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Jack Hanford's personal website">
+  <meta name="keywords" content="Jack, Hanford, Michigan, Leland, Palo Alto, Teen, College, Front End, Web Developer, Jack Hanford, Hacker, Programmer, Web, JavaScript, Front">
+
+  <link rel="stylesheet" type="text/css" href="bower_components/Font-Awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./css/bttn.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+  <link rel="icon" type="image/png" href="images/me.jpg">
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/router/dist/router.es5.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="./components/about/about.js"></script>
+  <script src="./components/commits/commitList.js"></script>
+</head>
+
+<body ng-app="website" ng-controller="AppController as app">
+  <div class="trans animateMe">
+    <div class="picture-title">
+      <a ng-link="about">
+        <img id="top" src="images/me.jpg" class="ProfilePic animateMe">
+      </a>
+      <h1>{{ title }}</h1>
+      <h2 class="title">Jack <b>Hanford</b></h2>
+      <p class="center">Developer - Hacker - Technology Addict</p>
+    </div>
+
+    <div class="buttonspace bttn-deck animateMe">
+      <a ng-link="portfolio" class="fa fa-briefcase"><md-tooltip>What I've worked on</md-tooltip></a>
+      <a href="http://twitter.com/jackhanford" class="fa fa-twitter"><md-tooltip>Twitter</md-tooltip></a>
+      <a href="http://github.com/hanford" class="fa fa-github-alt social"><md-tooltip>GitHubt</md-tooltip></a>
+      <a href="http://facebook.com/jackhanford" class="fa fa-facebook"><md-tooltip>facebook</md-tooltip></a>
+      <a href="mailto:jackhanford@gmail.com" class="fa fa-envelope"><md-tooltip>Email</md-tooltip></a>
+      <a ng-link="projects" class="fa fa-flask"><md-tooltip>Playground</md-tooltip></a>
+    </div>
+  </div>
+
+  <div class="about animateMe">
+
+  <ng-viewport></ng-viewport>
+
+    <!--      <div class="divider-div"></div>
+      <h3>What I'm writing about</h3>
+      {% for post in site.posts %}
+      <div class="topic">
+        <a class="no-underline" href="{{ post.url }}">
+          <div class="blogtitle">{{ post.title }}</div>
+        </a>
+      </div>
+      {% endfor %}
+      <br />-->
+<!--     <div class="follow-me">
+      <div class="social-box">
+        <div class="fb-follow" data-href="https://www.facebook.com/jackhanford" data-colorscheme="light" data-layout="button_count" data-show-faces="true"></div>
+      </div>
+      <div class="social-box">
+        <a href="https://twitter.com/jackhanford" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow Jack Hanford</a>
+      </div>
+    </div>
+  </div> -->
+<div class="bottompad"></div>
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-45226320-1', 'jackhanford.com');
+  ga('send', 'pageview');
+</script>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=518876491538635&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+  ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>
+ -->
+
