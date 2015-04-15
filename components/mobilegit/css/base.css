@@ -1,0 +1,21 @@
+.pressimage {
+  max-width: 100%;
+  width: 500px;
+  position: fixed;
+  bottom: 0;
+}
+.pressimage-small {
+  width: 100%;
+}
+.appstore-button {
+  margin: 0 auto;
+  display: block;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.padding-top {
+  padding-top: 15%;
+}

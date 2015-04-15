@@ -94,7 +94,7 @@ h3 {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
-	max-width: 900px;	
+	max-width: 900px;
 }
 .none {
 	display: none;
@@ -261,7 +261,7 @@ footer {
 	margin: 0 15px;
 	min-height: 255px;
 	max-width: 270px;
-	padding: 10px 10px 25px;
+	padding: 10px 10px 0;
 	text-decoration: none;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 	transition: all .15s linear;
@@ -359,7 +359,7 @@ footer {
 	padding: 20px;
 }
 
-.talk-box {} 
+.talk-box {}
 
 .talk-box .tab {
 	display: inline-block;
